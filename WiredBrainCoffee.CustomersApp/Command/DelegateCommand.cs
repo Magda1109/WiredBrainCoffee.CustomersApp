@@ -12,7 +12,7 @@ namespace WiredBrainCoffee.CustomersApp.Command
         {
             ArgumentNullException.ThrowIfNull(execute);
             _execute = execute;
-            canExecute = canExecute;
+            _canExecute = canExecute;
         }
 
         public void RaiseCanExecuteChanged() => CanExecuteChanged?.Invoke(this, EventArgs.Empty);
