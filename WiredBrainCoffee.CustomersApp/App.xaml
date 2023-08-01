@@ -7,7 +7,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Resources/Brushes.xaml"/>
-                <ResourceDictionary Source="/Resources/Converters.xamls.xaml"/>
+                <ResourceDictionary Source="/Resources/Converters.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 

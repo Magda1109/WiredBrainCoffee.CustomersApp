@@ -1,5 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 namespace WiredBrainCoffee.CustomersApp.ViewModel
 {
@@ -11,5 +13,7 @@ namespace WiredBrainCoffee.CustomersApp.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName)); //oznacza, że jeśli event PropertyChanged nie jest nullem, to go wywołujemy. This oznacza, że wywołujemy go dla tego view modelu, a 
         }
+
+        public virtual Task LoadAsync() => Task.CompletedTask;
     }
 }
